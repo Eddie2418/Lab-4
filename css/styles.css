@@ -5,20 +5,47 @@
 
 body {
   background: #fcc;
-} 
+  margin: 0;
+}
 
+nav {
+display: none;
+justify-content: center;
+background-color: #066;
+flex-direction: column;
+}
+nav a {
+  padding: 0.5em;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: white;
+}
 
+nav a:hover {
+  background-color: #099;
+}
+
+.menu {
+  background-color: #033;
+  color: white;
+  line-height: 2em;
+}
+
+.menu:hover + nav, nav:hover {
+  display: flex;
+}
 
 /* TABLET STYLES */
 
 @media screen and (min-width: 500px) {
 
   /* applies to screens wider than 499px */
-  
+
   body {
     background: #cfc;
-  } 
+  }
 }
+
 
 
 
@@ -30,5 +57,5 @@ body {
 
   body {
     background: #ccf;
-  } 
+  }
 }
